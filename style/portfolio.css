@@ -30,6 +30,7 @@ body {
   border: 0;
   color: var(--white-color);
   padding: 15px 35px;
+  margin-right: 30px;
 }
 
 .section-tittle {
@@ -259,17 +260,12 @@ nav a {
   display: flex;
   background: var(--background, #fff8f3);
   padding: 130px 230px 130px 230px;
-  gap: 24px;
+  gap: 120px;
 }
 
 .footer-collumn {
   width: 50%;
 }
-
-/* .footer-collumn-from input,
-textarea {
-  display: block;
-} */
 
 .footer-collumn-tittle {
   color: var(--dark-01, #181818);
