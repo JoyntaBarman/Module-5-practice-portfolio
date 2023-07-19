@@ -1,84 +1,81 @@
 /* shared styles */
-*{
-padding: 0;
-margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-:root{
+:root {
   --dark-01: #181818;
   --dark-02: #474747;
   --dark-03: #757575;
-  --dark-04: #D1D1D1;
-  --primary-color:#FD6E0A;
-  --white-color: #FFF;
-  --background: #FFF8F3;
+  --dark-04: #d1d1d1;
+  --primary-color: #fd6e0a;
+  --white-color: #fff;
+  --background: #fff8f3;
 }
 
-body{
-  background-color: var(--dark-04);
+body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.primary-color{
-  color:var(--primary-color, #FD6E0A)
+.primary-color {
+  color: var(--primary-color, #fd6e0a);
 }
-header{
+header {
   background-color: var(--background);
   background-image: url('../images/header_bg.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-
 }
 
 .section-tittle {
   color: var(--dark-01, #181818);
-text-align: center;
-font-size: 35px;
-font-weight: 700;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 .section-description {
   color: var(--dark-03, #757575);
-text-align: center;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-margin: 30px 0px;
-
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 30px 0px;
 }
 /* Nav Style */
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-title{
+.nav-title {
   color: var(--dark-01, #181818);
   font-size: 45px;
   font-weight: 800;
 }
 
-nav > ul{
+nav > ul {
   display: flex;
   align-items: center;
 }
 
-nav li{
+nav li {
   list-style: none;
   margin: 51px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: var(--dark-02, 474747);
 }
 
-.btn-primary{
+.btn-primary {
   font-size: 20px;
   font-weight: 700;
   border-radius: 5px;
-  background: #FD6E0A;
+  background: #fd6e0a;
   border: 0;
   color: var(--white-color);
   padding: 15px 35px;
@@ -86,7 +83,7 @@ nav a{
 
 /* Header Style */
 
-.btn-2{
+.btn-2 {
   color: var(--primary-color);
   font-size: 20px;
   font-weight: 700;
@@ -96,18 +93,17 @@ nav a{
   padding: 15px 35px;
 }
 
-.banner{
+.banner {
   padding: 30px 30px 0px 70px;
   display: flex;
   align-items: center;
-
 }
 
 .banner-content {
   width: 580px;
 }
 
-.portfolio-pic{
+.portfolio-pic {
   width: 550px;
   margin-right: 35px;
 }
@@ -134,25 +130,24 @@ nav a{
   margin-bottom: 50px;
 }
 
-
 /* main section */
 .main {
   width: 1100px;
   margin: 0px auto;
+  background: var(--white-color, #fff);
 }
 
 /* About section */
 .about {
-  background-color: var(--background, #FFF8F3);
+  background-color: var(--background, #fff8f3);
   margin: 130px 0px;
   padding: 130px 155px;
 }
 
-.info-container{
+.info-container {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-
 }
 
 .about-info {
@@ -161,27 +156,25 @@ nav a{
 
 .info-name {
   color: var(--dark-03, #757575);
-text-align: center;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .info-description {
   color: var(--dark-02, #474747);
-font-size: 20px;
-font-weight: 700;
-line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
 }
-
-
 
 /* What i do section */
 .what-i-do {
   margin: 130px 0px;
 }
 
-.what-i-do-description{
+.what-i-do-description {
   padding: 35px 130px;
 }
 
@@ -191,11 +184,69 @@ line-height: 30px;
 }
 
 .skils-info {
-  background-color: var(--white-color, #FFF);
   padding: 30px 33px;
-  margin: 24px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  gap: 24px;
 }
 
 .skills-name {
   margin: 30px 0px 20px 0px;
+}
+
+.skills-name {
+  color: var(--dark-01, #181818);
+font-size: 20px;
+font-weight: 700;
+}
+
+.skills-description {
+  color: var(--dark-03, #757575);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+
+/* summary of resume style */
+.summary-item-body{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+
+}
+
+.summary-body{
+  margin-right: 24px;
+}
+
+.summary-body-tittle {
+  color: var(--dark-02, #474747);
+font-size: 30px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.summary-item-tittle {
+  color: var(--dark-02, #474747);
+font-size: 25px;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.sumary-publisher-info {
+  color: var(--dark-03, #757575);
+font-size: 20px;
+font-weight: 600;
+}
+
+.summary-description {
+  color: var(--dark-03, #757575);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+
+.summary-horizontal-line {
+  margin: 30px 0px;
+  background: var(--dark-04, #d1d1d1);
 }
