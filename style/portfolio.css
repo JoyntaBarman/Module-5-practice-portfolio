@@ -8,12 +8,14 @@ margin: 0;
   --dark-01: #181818;
   --dark-02: #474747;
   --dark-03: #757575;
+  --dark-04: #D1D1D1;
   --primary-color:#FD6E0A;
   --white-color: #FFF;
   --background: #FFF8F3;
 }
 
 body{
+  background-color: var(--dark-04);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -42,7 +44,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 30px;
 margin: 30px 0px;
-text-align: center;
+
 }
 /* Nav Style */
 nav{
@@ -85,12 +87,12 @@ nav a{
 /* Header Style */
 
 .btn-2{
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 700;
   border-radius: 5px;
-  /* background: #FD6E0A; */
+
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
   padding: 15px 35px;
 }
 
@@ -170,4 +172,30 @@ line-height: 30px;
 font-size: 20px;
 font-weight: 700;
 line-height: 30px;
+}
+
+
+
+/* What i do section */
+.what-i-do {
+  margin: 130px 0px;
+}
+
+.what-i-do-description{
+  padding: 35px 130px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skils-info {
+  background-color: var(--white-color, #FFF);
+  padding: 30px 33px;
+  margin: 24px;
+}
+
+.skills-name {
+  margin: 30px 0px 20px 0px;
 }
