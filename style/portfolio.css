@@ -155,7 +155,8 @@ nav a {
 }
 
 .about-info {
-  /* text-align: center; */
+  text-align: center;
+  margin: 10px;
 }
 
 .info-name {
@@ -306,4 +307,56 @@ textarea {
   font-weight: 400;
   line-height: 28px;
   border: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* Responsive css designe */
+@media screen and (max-width: 576px) {
+  .main {
+    width: 100vw;
+  }
+  nav, .banner, .skills-container, .footer , .summary-item-body, .info-container  {
+    flex-direction: column;
+  }
+
+  .what-i-do-description {
+    padding: 35px 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-collumn {
+    width: calc(100% - 20px);
+  }
+
+  .about {
+    padding: 130px 10px;
+  }
+
+  .footer-collumn-from input[type='text'], .footer-collumn-from input[type='email'], textarea {
+    width: 80%;
+  }
+
+  header {
+    background-image: none;
+    /* padding: 10px; */
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .portfolio-pic {
+    width: 100%;
+    /* margin-right: 35px; */
+  }
+
+  nav li {
+    margin: 10px;
+  }
 }
